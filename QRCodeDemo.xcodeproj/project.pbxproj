@@ -15,6 +15,7 @@
 		05AE5A631D6ECC30008A92E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AE5A611D6ECC30008A92E8 /* LaunchScreen.storyboard */; };
 		05AE5A6E1D6ECC30008A92E8 /* QRCodeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AE5A6D1D6ECC30008A92E8 /* QRCodeDemoTests.m */; };
 		05AE5A791D6ECC30008A92E8 /* QRCodeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AE5A781D6ECC30008A92E8 /* QRCodeDemoUITests.m */; };
+		05AE5A891D6ECCA3008A92E8 /* ALPQRCodeDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AE5A881D6ECCA3008A92E8 /* ALPQRCodeDecode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		05AE5A741D6ECC30008A92E8 /* QRCodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AE5A781D6ECC30008A92E8 /* QRCodeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeDemoUITests.m; sourceTree = "<group>"; };
 		05AE5A7A1D6ECC30008A92E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05AE5A871D6ECCA3008A92E8 /* ALPQRCodeDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALPQRCodeDecode.h; path = QRCode/ALPQRCodeDecode.h; sourceTree = "<group>"; };
+		05AE5A881D6ECCA3008A92E8 /* ALPQRCodeDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALPQRCodeDecode.m; path = QRCode/ALPQRCodeDecode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		05AE5A521D6ECC30008A92E8 /* QRCodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				05AE5A861D6ECC52008A92E8 /* QRCode */,
 				05AE5A561D6ECC30008A92E8 /* AppDelegate.h */,
 				05AE5A571D6ECC30008A92E8 /* AppDelegate.m */,
 				05AE5A591D6ECC30008A92E8 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				05AE5A7A1D6ECC30008A92E8 /* Info.plist */,
 			);
 			path = QRCodeDemoUITests;
+			sourceTree = "<group>";
+		};
+		05AE5A861D6ECC52008A92E8 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				05AE5A871D6ECCA3008A92E8 /* ALPQRCodeDecode.h */,
+				05AE5A881D6ECCA3008A92E8 /* ALPQRCodeDecode.m */,
+			);
+			name = QRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				05AE5A5B1D6ECC30008A92E8 /* ViewController.m in Sources */,
 				05AE5A581D6ECC30008A92E8 /* AppDelegate.m in Sources */,
 				05AE5A551D6ECC30008A92E8 /* main.m in Sources */,
+				05AE5A891D6ECCA3008A92E8 /* ALPQRCodeDecode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRCodeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xu.QRCodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRCodeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xu.QRCodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
